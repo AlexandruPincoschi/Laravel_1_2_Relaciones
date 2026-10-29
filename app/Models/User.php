@@ -39,6 +39,9 @@ class User extends Authenticatable
      *
      * @return array<string, string>
      */
+    public function address(){
+        return $this->hasOne('App\Models\Address');
+    }
     protected function casts(): array
     {
         return [

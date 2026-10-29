@@ -1,0 +1,122 @@
+{
+  "info": {
+    "_postman_id": "79c914b2-2a29-4d07-a16a-742e30255fd1",
+    "name": "PruebaAPI1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST REQUEST",
+      "id": "94dd08cf-6b50-42e5-9051-ee00554a8a11",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "name", "value": "Celia", "type": "text" },
+            { "key": "email", "value": "c@gmail.com", "type": "text" },
+            { "key": "password", "value": "12345678", "type": "text" },
+            { "key": "c_password", "value": "12345678", "type": "text" }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/register",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "register"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Show User",
+      "id": "f42c4737-686d-4e60-93d5-d9ca297c3c08",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/user/3",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "user", "3"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Show address_user",
+      "id": "d1a3a79f-879c-49d7-b939-21d37dfc8d20",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/user/2/address",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "user", "2", "address"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post Address",
+      "id": "a2ba5f79-1c56-429d-b033-f26e845b2539",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "country", "value": "Italy", "type": "text" },
+            { "key": "zipcode", "value": "03", "type": "text" },
+            { "key": "email", "value": "p@gmail.com", "type": "text" }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/address",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "address"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Show Address",
+      "id": "247f0008-1280-449c-8b16-aed5c866d963",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/address/2",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "address", "2"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Show user_address",
+      "id": "13287c33-98e7-4255-8fd9-17ab9921bb07",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/address/2/user",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "address", "2", "user"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
